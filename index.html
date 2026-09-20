@@ -6,127 +6,25 @@
 <title>Applied Quixotics</title>
 <meta name="description" content="Applied Quixotics — Medical Product Sourcing & Commercial Partnerships">
 <style>
-:root{
-  --paper:#fff;
-  --ink:#171717;
-  --muted:#666;
-  --contact:#7a4937;
-}
+:root{--paper:#fff;--ink:#171717;--muted:#5f5f5f;--contact:#7a4937}
 *{box-sizing:border-box}
 html,body{margin:0;min-height:100%;background:var(--paper);color:var(--ink)}
-body{
-  min-height:100svh;
-  display:grid;
-  place-items:center;
-  font-family:Arial,Helvetica,sans-serif;
-}
-main{
-  width:min(94vw,980px);
-  text-align:center;
-  padding:clamp(28px,6vh,72px) 20px clamp(44px,9vh,100px);
-}
-.brand{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:clamp(18px,3vw,34px);
-  margin:0 auto clamp(30px,5vh,52px);
-}
-.windmill{
-  width:clamp(82px,13vw,138px);
-  height:auto;
-  flex:0 0 auto;
-}
-.wordmark{
-  text-align:left;
-}
-.name{
-  margin:0;
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(34px,6.1vw,72px);
-  font-weight:700;
-  line-height:.95;
-  letter-spacing:-.035em;
-  text-transform:uppercase;
-}
-.pronunciation{
-  margin:12px 0 0;
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(15px,2vw,21px);
-  color:#444;
-  letter-spacing:.08em;
-}
-.tagline{
-  margin:0 auto;
-  max-width:980px;
-  font-size:clamp(14px,1.85vw,20px);
-  font-weight:400;
-  line-height:1.55;
-  letter-spacing:.11em;
-  text-transform:uppercase;
-}
-.principle{
-  margin:clamp(28px,4.5vh,46px) auto 0;
-  max-width:760px;
-  color:var(--muted);
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(16px,2vw,21px);
-  line-height:1.55;
-  font-style:italic;
-}
-
-.contact{
-  display:inline-block;
-  margin-top:clamp(38px,6vh,64px);
-  color:var(--contact);
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(17px,2.1vw,23px);
-  line-height:1.4;
-  letter-spacing:.08em;
-  text-decoration:none;
-}
-.contact:hover,.contact:focus-visible{
-  text-decoration:underline;
-  text-underline-offset:.18em;
-}
-@media(max-width:650px){
-  .brand{gap:14px;align-items:center}
-  .windmill{width:78px}
-  .name{font-size:clamp(29px,9.2vw,48px)}
-  .pronunciation{font-size:14px;letter-spacing:.05em}
-  .tagline{letter-spacing:.07em}
-  .principle{font-size:16px}
-  .contact{letter-spacing:.04em}
-}
+body{min-height:100svh;display:grid;place-items:center;font-family:Arial,Helvetica,sans-serif}
+main{width:min(94vw,980px);text-align:center;padding:clamp(28px,6vh,72px) 20px clamp(44px,9vh,100px)}
+.wordmark{display:block;width:min(92vw,820px);height:auto;margin:0 auto clamp(28px,4.5vh,48px)}
+.tagline{margin:0 auto;max-width:980px;font-size:clamp(14px,1.85vw,20px);font-weight:400;line-height:1.55;letter-spacing:.11em;text-transform:uppercase}
+.principle{margin:clamp(28px,4.5vh,46px) auto 0;max-width:760px;color:var(--muted);font-family:Georgia,"Times New Roman",serif;font-size:clamp(16px,2vw,21px);line-height:1.55;font-style:italic}
+.contact{display:inline-block;margin-top:clamp(38px,6vh,64px);color:var(--contact);font-family:Georgia,"Times New Roman",serif;font-size:clamp(17px,2.1vw,23px);line-height:1.4;letter-spacing:.08em;text-decoration:none}
+.contact:hover,.contact:focus-visible{text-decoration:underline;text-underline-offset:.18em}
+@media(max-width:560px){main{width:100%}.wordmark{width:min(96vw,820px)}.tagline{letter-spacing:.07em}.principle{font-size:16px}.contact{letter-spacing:.04em}}
 </style>
 </head>
 <body>
 <main>
-  <div class="brand" aria-label="Applied Quixotics — kee ah tics">
-    <svg class="windmill" viewBox="0 0 180 220" role="img" aria-label="Windmill">
-      <g fill="none" stroke="#111" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M88 82 L58 210" />
-        <path d="M88 82 L122 210" />
-        <path d="M65 135 L111 135" />
-        <path d="M62 155 L116 155" />
-        <path d="M58 177 L120 177" />
-        <circle cx="88" cy="76" r="8" fill="#111"/>
-        <path d="M88 76 L38 23 L70 62 Z" />
-        <path d="M88 76 L146 28 L106 64 Z" />
-        <path d="M88 76 L140 124 L106 90 Z" />
-        <path d="M88 76 L30 120 L70 88 Z" />
-      </g>
-    </svg>
-    <div class="wordmark">
-      <h1 class="name">Applied Quixotics</h1>
-      <p class="pronunciation">— (kee·ah·tics) —</p>
-    </div>
-  </div>
-
-  <p class="tagline">Medical Product Sourcing &amp; Commercial Partnerships</p>
-  <p class="principle">“What’s the easiest thing you can do for someone that’s hard for them to do?”</p>
-
-  <a class="contact" href="mailto:Contact@AppliedQuixotics.com">Contact@AppliedQuixotics.com</a>
+<img class="wordmark" src="applied-quixotics-wordmark.png" alt="Applied Quixotics — kee ah tics">
+<p class="tagline">Medical Product Sourcing &amp; Commercial Partnerships</p>
+<p class="principle">“What’s the easiest thing you can do for someone that’s hard for them to do?”</p>
+<a class="contact" href="mailto:Contact@AppliedQuixotics.com">Contact@AppliedQuixotics.com</a>
 </main>
 </body>
 </html>
