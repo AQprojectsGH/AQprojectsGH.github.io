@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light">
-<title>Applied Quixotics</title>
+<title>Applied Quixotics | Home</title>
 <meta name="description" content="Applied Quixotics is building a full-service international network for medical device and equipment distribution.">
 <style>
 :root{
@@ -29,6 +29,25 @@ main{
   width:min(94vw,980px);
   text-align:center;
   padding:clamp(28px,6vh,72px) 20px clamp(44px,9vh,100px);
+}
+.site-nav{
+  display:flex;
+  justify-content:center;
+  gap:28px;
+  margin:0 auto clamp(42px,6vh,68px);
+  font-size:14px;
+  line-height:1.4;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+.site-nav a{
+  color:var(--ink);
+  text-decoration:none;
+  padding-bottom:4px;
+  border-bottom:1px solid transparent;
+}
+.site-nav a:hover,.site-nav a:focus-visible,.site-nav a[aria-current="page"]{
+  border-bottom-color:var(--ink);
 }
 .wordmark{
   display:block;
@@ -81,6 +100,7 @@ main{
 }
 @media(max-width:560px){
   main{width:100%}
+  .site-nav{gap:22px;margin-bottom:42px;font-size:13px}
   .wordmark{width:min(78vw,575px);margin-bottom:64px}
   .tagline{letter-spacing:.05em}
   .principle{font-size:16px}
@@ -91,6 +111,11 @@ main{
 </head>
 <body>
 <main>
+<nav class="site-nav" aria-label="Primary">
+  <a href="index.html" aria-current="page">Home</a>
+  <a href="what-we-do.html">What We Do</a>
+</nav>
+
 <img class="wordmark" src="applied-quixotics-wordmark.png" alt="Applied Quixotics — kee ah tics">
 <p class="tagline">Medical Product Sourcing &amp; Commercial Partnerships</p>
 <p class="principle">“What’s the easiest thing you can do for someone that’s hard for them to do?”</p>
