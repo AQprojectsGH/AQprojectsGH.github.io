@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Applied Quixotics | What We Do</title>
+<meta name="description" content="What Applied Quixotics does across manufacturing, sourcing, compliance, international market expansion, data interoperability, and business connections.">
+<style>
+:root{
+  color-scheme:light;
+  --paper:#f4efe6;
+  --ink:#171717;
+}
+*{box-sizing:border-box}
+html,body{
+  margin:0;
+  min-height:100%;
+  background:var(--paper) !important;
+  color:var(--ink) !important;
+}
+body{
+  min-height:100svh;
+  font-family:Georgia,"Times New Roman",serif;
+}
+main{
+  width:min(92vw,900px);
+  margin:0 auto;
+  padding:clamp(28px,6vh,72px) 20px clamp(44px,9vh,100px);
+}
+.site-nav{
+  display:flex;
+  justify-content:center;
+  gap:28px;
+  margin:0 auto clamp(42px,6vh,68px);
+  font-size:14px;
+  line-height:1.4;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+.site-nav a{
+  color:var(--ink);
+  text-decoration:none;
+  padding-bottom:4px;
+  border-bottom:1px solid transparent;
+}
+.site-nav a:hover,.site-nav a:focus-visible,.site-nav a[aria-current="page"]{
+  border-bottom-color:var(--ink);
+}
+.wordmark{
+  display:block;
+  width:min(52vw,470px);
+  height:auto;
+  margin:0 auto clamp(54px,7vh,82px);
+}
+h1{
+  margin:0 0 clamp(44px,6vh,68px);
+  text-align:center;
+  font-size:clamp(30px,5vw,52px);
+  font-weight:400;
+  line-height:1.08;
+}
+.services{
+  display:grid;
+  gap:0;
+}
+.service{
+  padding:clamp(30px,4.5vh,46px) 0;
+  border-top:1px solid var(--ink);
+}
+.service:last-child{
+  border-bottom:1px solid var(--ink);
+}
+.service h2{
+  margin:0 0 16px;
+  font-size:clamp(21px,3vw,30px);
+  font-weight:400;
+  line-height:1.25;
+}
+.service p{
+  margin:0;
+  max-width:820px;
+  font-size:clamp(16px,1.8vw,19px);
+  line-height:1.7;
+}
+.contact-wrap{
+  text-align:center;
+}
+.contact{
+  display:inline-block;
+  margin-top:clamp(42px,6vh,64px);
+  color:var(--ink);
+  font-size:clamp(17px,2.1vw,23px);
+  line-height:1.4;
+  letter-spacing:.04em;
+  text-decoration:none;
+}
+.contact:hover,.contact:focus-visible{
+  text-decoration:underline;
+  text-underline-offset:.18em;
+}
+@media(max-width:560px){
+  main{width:100%}
+  .site-nav{gap:22px;margin-bottom:42px;font-size:13px}
+  .wordmark{width:min(72vw,470px);margin-bottom:52px}
+  .service p{font-size:16px}
+  .contact{letter-spacing:.02em}
+}
+</style>
+</head>
+<body>
+<main>
+<nav class="site-nav" aria-label="Primary">
+  <a href="index.html">Home</a>
+  <a href="what-we-do.html" aria-current="page">What We Do</a>
+</nav>
+
+<img class="wordmark" src="applied-quixotics-wordmark.png" alt="Applied Quixotics — kee ah tics">
+<h1>What We Do</h1>
+
+<section class="services" aria-label="Applied Quixotics services">
+  <article class="service">
+    <h2>1. Manufacturing, Sourcing &amp; Compliance</h2>
+    <p>If something in your manufacturing, sourcing, raw materials, supplier quality, or compliance process is keeping you from getting a product made, approved, or delivered properly, we can help. We investigate the problem, find the capabilities needed to solve it, and take responsibility for a clearly defined piece of the work.</p>
+  </article>
+
+  <article class="service">
+    <h2>2. International Market Expansion</h2>
+    <p>If you have a product that works in one market and want to bring it into another, we can help build the route. That can include identifying customers and partners, understanding regulatory and commercial requirements, finding local capabilities, and coordinating execution on the ground.</p>
+  </article>
+
+  <article class="service">
+    <h2>3. Data Interoperability &amp; Sovereignty</h2>
+    <p>If your important information is scattered across ERP systems, CRMs, spreadsheets, machines, emails, portals, and people’s heads, we can help make those systems work together. We build practical software and AI-enabled infrastructure around the way your organization actually operates, while helping you retain control over your data, business logic, and institutional knowledge.</p>
+  </article>
+
+  <article class="service">
+    <h2>4. Connections &amp; Introductions</h2>
+    <p>Sometimes you do not need a project - you just need the right person. If someone in our network can help you, we are happy to make the introduction.</p>
+  </article>
+</section>
+
+<div class="contact-wrap">
+  <a class="contact" href="mailto:Contact@AppliedQuixotics.com">Contact@AppliedQuixotics.com</a>
+</div>
+</main>
+</body>
+</html>
