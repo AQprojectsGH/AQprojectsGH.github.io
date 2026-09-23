@@ -8,7 +8,7 @@
 <meta name="description" content="What Applied Quixotics does across manufacturing, sourcing, compliance, international market expansion, data interoperability, and business connections.">
 <style>
 :root{
-  color-scheme:light;
+  color-scheme:only light;
   --paper:#fefefe;
   --ink:#000000;
 }
@@ -107,10 +107,17 @@ h1{
   .contact{letter-spacing:.02em}
 }
 
-body, main, nav, section, article, p, h1, h2, a, .tagline, .principle, .description, .contact, .site-nav, .site-nav a{
+
+
+html, body{
+  color-scheme:only light !important;
+  forced-color-adjust:none !important;
+}
+html *, body *{
   color:#000000 !important;
   -webkit-text-fill-color:#000000 !important;
   opacity:1 !important;
+  forced-color-adjust:none !important;
 }
 
 </style>
